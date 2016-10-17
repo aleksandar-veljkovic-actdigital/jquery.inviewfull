@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../jquery.inviewfull.js"></script>
+
+    <style>
+      body > div {
+        font-size: 48px;
+        outline: 1px solid #ccc;
+        color: #222;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one">
+      <h2>one</h2>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, sem a malesuada posuere, diam turpis faucibus metus, ac viverra urna velit a eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna non nibh convallis fringilla. Nunc laoreet lacus vel eros accumsan, id tincidunt augue maximus. Vivamus molestie risus at tempus commodo. Sed quis scelerisque nisi. Proin imperdiet euismod nibh, et ullamcorper arcu pharetra sed. Nulla eleifend ex eu leo euismod, eget finibus lectus ultrices. Praesent blandit nibh mi, vel efficitur arcu aliquam fringilla. Sed vitae ornare nibh. Quisque quis semper mauris. Aliquam tincidunt ante sed ante pulvinar accumsan. Aenean sagittis, est eu luctus varius, tortor nisi lobortis risus, nec fermentum est sapien in lorem.
+    </div>
+    <div class="two">
+      <h2>two</h2>
+      Nulla euismod eu turpis eu fermentum. Nulla sodales volutpat congue. Proin molestie, ante eu pharetra hendrerit, diam risus hendrerit tellus, ornare gravida dolor magna quis velit. Integer vitae semper dui. Phasellus sit amet elit nec ipsum blandit ornare. Maecenas dolor lorem, efficitur quis ligula id, tempor vehicula quam. Vestibulum aliquam nibh a libero lobortis varius. Integer dui risus, volutpat commodo malesuada non, condimentum quis lacus. Suspendisse malesuada velit justo, nec varius augue consectetur et. Sed posuere egestas mi a feugiat.
+    </div>
+    <div class="three">
+      <h2>three</h2>
+      Aliquam consequat dolor nec lobortis sodales. Nulla eu dapibus nibh, eu ultricies ipsum. Nulla tempor, mauris eu ultrices finibus, ligula urna placerat nisl, sit amet fermentum metus augue non sem. Aenean cursus sit amet nibh in blandit. Sed vel congue tortor. Donec eu metus at nisi pellentesque ultrices. Mauris vitae purus luctus, imperdiet lacus in, tincidunt ligula. Morbi non iaculis dui. Praesent mollis velit sit amet nibh placerat, eu facilisis diam sodales. In eu vestibulum leo. Ut ut erat at mauris mollis rhoncus sed vel nulla. Nulla sed velit rhoncus, ullamcorper purus sit amet, cursus velit. Mauris in lectus mollis, vulputate eros ut, vehicula orci. Sed sed leo a lacus faucibus hendrerit. Duis eu interdum arcu.
+    </div>
+    <div class="four">
+      <h2>four</h2>
+      Integer finibus eu purus in rutrum. Suspendisse consectetur risus ex, sed posuere dui mattis vel. Mauris viverra, ante ut sodales placerat, nisl erat porttitor augue, sit amet porta orci ante et sapien. Maecenas sagittis fermentum libero nec mollis. Vestibulum quis pharetra erat. Donec id elit ipsum. Cras mattis sem a finibus interdum. Nunc ut fermentum urna. Cras vitae elit lectus. Duis enim erat, dapibus eu pellentesque et, rutrum nec nisl. Mauris ac metus et dui imperdiet gravida. Aenean risus purus, ullamcorper eu sem ut, gravida porttitor leo.
+    </div>
+    <div class="five">
+      <h2>five</h2>
+      Etiam accumsan sollicitudin mi, vitae egestas ligula euismod nec. Fusce vitae leo risus. In ultrices ante erat, porttitor egestas lacus posuere a. Proin sit amet felis ligula. Integer vel porta dolor, ut consectetur massa. Mauris facilisis cursus justo, quis iaculis enim hendrerit et. Curabitur volutpat massa nec facilisis lacinia. Morbi ligula justo, suscipit vitae laoreet sit amet, finibus sodales velit. Duis eget ligula nunc. Vivamus posuere posuere mauris, nec posuere elit dictum eu. Sed eget risus ac turpis facilisis luctus et id lacus.
+    </div>
+
+
+    <script>
+
+      $('body > div.two').on('inviewfull', function(event, isInView){
+        console.log(isInView);
+      });
+
+    </script>
+
+
+  </body>
+</html>
